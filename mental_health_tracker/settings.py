@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-8d44_qp8s6zok+l1aj9iome8hmgak!=v@gsxwt7l&wc0lh3(kr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1","farrel-athalla-mentalhealthtracker.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","farrel-athalla-mentalhealthtracker.pbp.cs.ui.ac.id",
+                 "http://farrel-athalla-mentalhealthtracker.pbp.cs.ui.ac.id/", "https://farrel-athalla-mentalhealthtracker.pbp.cs.ui.ac.id/"]
 
 
 # Application definition
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'mental_health_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
